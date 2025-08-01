@@ -2,7 +2,7 @@
 
 num=int(input('enter a number:'))
 f=1
-while num>0:
-    f=f*num
-    num-=1
+
+for i in range(1,num+1):
+    f=f*i
 print(f)
