@@ -1,11 +1,15 @@
-#reverse of a number
-
-num=int(input('enter a number'))
-rev=0
-while num!=0:
-    digit=num%10
-    rev=rev*10+digit
-    num=num//10
-print(rev)
 
 
+
+s='Python'
+
+def isreverse(st):
+    output=''
+    #for ch in range(len(st)-1,-1,-1):
+        #output+=st[ch]
+    for ch in st:
+        output=ch+output
+    return output
+res=isreverse(s)
+print(res)
+        
