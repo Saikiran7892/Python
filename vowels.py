@@ -1,14 +1,16 @@
 
 
-s='Programming is fun'
+#vowels count in name
 
-def isvowel(st):
-    output=''
+
+name=input('enter a name:')
+
+def isvowels(st):
+    vowels_cnt=0
     for ch in st:
         if ch in 'aeiouAEIOU':
-            output=output+ch
-    return output
+            vowels_cnt+=1
+    return vowels_cnt
 
-res=isvowel(s)
-print(res)
-            
+result=isvowels(name)
+print(result)

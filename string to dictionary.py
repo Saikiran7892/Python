@@ -1,7 +1,7 @@
 
 
+name=input('enter a name:')
 
-s='aaabbcddd'
 
 def isfine(st):
     d={}
@@ -9,16 +9,8 @@ def isfine(st):
         cnt=st.count(ch)
         if ch not in d:
             d[ch]=cnt
-
     return d
 
-
-res=isfine(s)
-st=''
-
-for i in res.keys():
-    st=st+(i+str(res[i]))
-
-print(st)
-
- 
+res=isfine(name)
+print(res)
+        
